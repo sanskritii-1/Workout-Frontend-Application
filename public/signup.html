@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <form class="flex flex-col min-h-screen justify-around m-4 font-montserrat" method="post" action="/">
+        <div class="flex flex-col justify-around">
+        <h2 class="font-roboto font-semibold text-xl mb-12 text-[#2C2B2B]">Create an account</h2>
+            <input class="rounded-xl text-white mb-6 h-12 p-5 bg-[#F1F1F1]" type="text" name="fName" placeholder="First Name" />
+            <input class="rounded-xl text-white mb-6 h-12 p-5 bg-[#F1F1F1]" type="text" name="lName" placeholder="Last Name" />
+            <input class="rounded-xl text-white mb-6 h-12 p-5 bg-[#F1F1F1]" type="text" name="email" placeholder="Email" />
+            <input class="rounded-xl text-white mb-6 h-12 p-5 bg-[#F1F1F1]" type="text" name="password" placeholder="Password" />
+            <div>
+                <label for="terms" class="inline-flex items-center align-middle">
+                    <input id="terms" type="checkbox" class="form-checkbox h-5 w-5 ">
+                    <span class="ml-2 text-[#787878]">By proceeding, I agree to all <span class="text-[#9FB2FF] underline">T&C</span> and  <span class="text-[#9FB2FF] underline">Privacy Policy</span></span>
+                  </label>
+            </div>
+        </div>
+        <!-- <a href="goals.html"> -->
+            <button class="text-white h-12 rounded-xl mt-12" style="background: linear-gradient(270deg, #7B91FF 0%, #95BEFF 100%);" type="submit">Create an Account</button>
+        <!-- </a> -->
+
+        <div class="inline-flex">
+            <span class="w-1/2 mr-2 border-b border-[#7F7F7F]  h-3"></span>
+            <span>Or</span>
+            <span class="w-1/2 ml-2 border-b border-[#7F7F7F] h-3"></span>
+        </div>    
+
+        <div>
+            <div class="alternative-signup">
+                <button>google</button>
+                <button>facebook</button>
+            </div>
+    
+            <div>
+                <span>Already have an account?</span>
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <button><</button>
+            <h3>Workout Schedule</h3>
+        </div>
+
+        <div>
+            <button><</button>
+            <p id="datepickerTrigger">Feb 2024</p>
+            <input type="date" id="datepickerInput" style="display: none;">
+            <button>></button>
+        </div>
+
+        <div>
+            <div>
+                <p>day</p>
+                <p>date</p>
+            </div>
+            <div>
+                <p>day</p>
+                <p>date</p>
+            </div>
+            <div>
+                <p>day</p>
+                <p>date</p>
+            </div>
+            <div>
+                <p>day</p>
+                <p>date</p>
+            </div>
+            <div>
+                <p>day</p>
+                <p>date</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <p>time</p>
+                <p>workout, time</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Get references to the div and input elements
+        const datepickerTrigger = document.getElementById("datepickerTrigger");
+        const datepickerInput = document.getElementById("datepickerInput");
+
+        // Add event listener to the trigger div
+        datepickerTrigger.addEventListener("click", function () {
+            // Trigger the click event of the input element
+            console.log("clicked")
+            datepickerInput.showPicker();
+
+        });
+
+        // Add event listener to the input element to handle date selection
+        datepickerInput.addEventListener("change", function () {
+            // Do something with the selected date, e.g., display it
+            console.log("Selected date:", datepickerInput.value);
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <style>
+        
+            #tracker-graph {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <button><</button>
+            <h2>Workout Tracker</h2>
+        </div>
+
+        <div>
+            <!-- 21 each -->
+            <div id="tracker-graph">
+                <table class="charts-css column show-labels multiple show-primary-axis hide-data-axes datasets-spacing-1">
+                  <caption> Column Example #15 </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col"> Year </th>
+                      <th scope="col"> Progress 1</th>
+                      <th scope="col"> Progress 2</th>
+                      <th scope="col"> Progress 3</th>
+                      <th scope="col"> Progress 4</th>
+                      <th scope="col"> Progress 5</th>
+                      <th scope="col"> Progress 6</th>
+                      <th scope="col"> Progress 7</th>
+                      <th scope="col"> Progress 8</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"> 2000 </th>
+                      <td style="--size: 0.2;"></td>
+                      <td style="--size: 0.5;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 0.7;"></td>
+                      <td style="--size: 0.4;"></td>
+                      <td style="--size: 0.4;"></td>
+                      <td style="--size: 0.4;"></td>
+                      <td style="--size: 0.4;"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> 2020 </th>
+                      <td style="--size: 0.2;"></td>
+                      <td style="--size: 0.4;"></td>
+                      <td style="--size: 0.6;"></td>
+                      <td style="--size: 0.8;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 1.0;"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> 2020 </th>
+                      <td style="--size: 0.2;"></td>
+                      <td style="--size: 0.4;"></td>
+                      <td style="--size: 0.6;"></td>
+                      <td style="--size: 0.8;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 1.0;"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row"> 2020 </th>
+                      <td style="--size: 0.2;"></td>
+                      <td style="--size: 0.4;"></td>
+                      <td style="--size: 0.6;"></td>
+                      <td style="--size: 0.8;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 1.0;"></td>
+                      <td style="--size: 1.0;"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+            <div>
+                <img src="../assets/img/warning.png" alt="">
+                <span>You've burned fewer calories than yesterday. Time to get moving!</span>
+            </div>
+
+        </div>
+
+        <div>
+            <div>
+                <h3>Upcoming Workout</h3>
+                <p>See more</p>
+            </div>
+
+            <div>
+                <img src="../assets/img/fullbody.png" alt="weight-lifting">
+                <div>
+                    <p>Full Body Workout</p>
+                    <p>Today 3pm</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div>
+                <img src="../assets/img/upperbody.png" alt="yoga">
+                <div>
+                    <p>Upper Body Workout</p>
+                    <p>4 Feb, 3:30 pm</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <h3>What Do You Want to Train</h3>
+
+            <div>
+                <div>
+                    <p>Full Body Workout</p>
+                    <ul>
+                        <li>Arms</li>
+                        <li>Chest</li>
+                    </ul>
+                </div>
+                <img src="../assets/img/fullWeights.png" alt="dumbbell-lifting">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+            <div>
+                <button><img src="../assets/img/search.png" alt="search"></button>
+            </div>
+
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            
+        </div>
+
+    </div>
+<script>
+    // JavaScript code from your previous example
+    const chartData = [900, 100, 800, 200];
+
+    const barsContainer = document.querySelector('#chart-container .bars');
+
+    chartData.forEach(value => {
+      const bar = document.createElement('div');
+      bar.classList.add('bar');
+      bar.style.height = `${(value / 900) * 80}%`;
+      barsContainer.appendChild(bar);
+    });
+  </script>
+    <script src="../src/index.js"></script>
+</body>
+</html>
